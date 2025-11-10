@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suggesting Edits | Graduation Projects E-Library</title>
+
+    <!-- CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../icomoon/icomoon.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* عنوان الصفحة بخط تحت */
+        .page-title {
+            display: inline-block;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid rgb(154, 136, 76);
+            padding-bottom: 6px;
+            margin-bottom: 2rem;
+        }
+
+        /* تنسيق الحقول بخط سفلي فقط */
+        .subscribe-content input[type="email"],
+        .subscribe-content input[type="text"],
+        .subscribe-content textarea {
+            all: unset;
+            width: 100%;
+            border-bottom: 2px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #333;
+            background-color: transparent;
+            transition: border-bottom-color 0.3s ease;
+        }
+
+        .subscribe-content input[type="email"]:focus,
+        .subscribe-content input[type="text"]:focus,
+        .subscribe-content textarea:focus {
+            border-bottom: 2px solid rgb(154, 136, 76);
+            outline: none !important;
+            box-shadow: none !important;
+            background-color: transparent;
+        }
+
+        /* تنسيق النص التوضيحي */
+        .form-intro {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="suggest-edits" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-8">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="title-element">
+                                <h2 class="section-title page-title">Suggesting Edits</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="subscribe-content" data-aos="fade-up">
+                                <p class="form-intro">
+                                    Help us improve the archive! If you spot a typo, missing detail, or have a
+                                    suggestion to enhance a project listing, let us know below.
+                                </p>
+                                <form id="suggest-form">
+                                    <input type="text" name="project" placeholder="Project title or link" required>
+                                    <textarea name="suggestion" rows="4" placeholder="Describe your suggested edit..."
+                                        required></textarea>
+                                    <input type="email" name="email" placeholder="Your email (optional)">
+                                    <button class="btn-subscribe" type="submit">
+                                        <span>Send</span>
+                                        <i class="icon icon-send"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="../js/dark-mode.js"></script>
+</body>
+
+</html>

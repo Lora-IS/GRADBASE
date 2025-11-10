@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Center | Graduation Projects E-Library</title>
+
+  <!-- CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../icomoon/icomoon.css">
+  <link rel="stylesheet" href="../css/vendor.css">
+  <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+  <style>
+    .subscribe-content input[type="email"],
+    .subscribe-content input[type="text"],
+    .subscribe-content textarea {
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background-color: transparent;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #333;
+      transition: border-bottom-color 0.3s ease;
+    }
+
+    .subscribe-content input:focus,
+    .subscribe-content textarea:focus {
+      border-bottom: 2px solid rgb(154, 136, 76);
+      /* نفس اللون الذهبي */
+      outline: none;
+      background-color: transparent;
+      /* يبقى شفاف */
+    }
+    .page-title {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid rgb(154, 136, 76);
+  padding-bottom: 6px;
+  margin-bottom: 2rem;
+}
+
+  </style>
+  
+</head>
+
+<body>
+  <section id="help-center" class="py-5 my-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+          <div class="section-header align-center">
+            <div class="title"><span>Support & Guidance</span></div>
+            <h2 class="section-title page-title">Help Center</h2>
+
+          </div>
+
+          <div class="content-box mt-4" data-aos="fade-up">
+            <p>Welcome to the Help Center! Here you'll find answers to common questions and tips for using the GRADBASE
+              effectively.</p>
+
+            <ul>
+              <li><strong>Searching Projects:</strong> Use the search bar to filter by title, department, or keywords.
+              </li>
+              <li><strong>Bookmarking:</strong> Click the bookmark icon to save projects to your personal list.</li>
+              <li><strong>Commenting:</strong> Leave feedback or questions under each project to engage with authors.
+              </li>
+              <li><strong>AI Assistant:</strong> Use the built-in assistant to brainstorm ideas or improve your writing.
+              </li>
+              <li><strong>Accessibility:</strong> The platform supports screen readers and keyboard navigation.</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="help-form" class="py-5 my-5">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="title-element">
+                <h2 class="section-title divider">Still need help?</h2>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="subscribe-content styled-form" data-aos="fade-up">
+                <p class="form-intro">
+                  If your question wasn’t answered above, feel free to reach out directly.<br>
+                  We’ll get back to you as soon as possible.
+                </p>
+                <form id="help-form">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email address here"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Describe your issue..."
+                      required></textarea>
+                  </div>
+                  <button class="btn-subscribe" type="submit">
+                    <span>Send</span>
+                    <i class="icon icon-send"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="../js/dark-mode.js"></script>
+</body>
+
+</html>

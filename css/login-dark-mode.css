@@ -1,0 +1,239 @@
+/* Specialized Dark Mode CSS for Login Page */
+
+:root {
+  --login-dark-bg: #121212;
+  --login-dark-card-bg: #1e1e1e;
+  --login-dark-content-bg: #252525;
+  --login-dark-header-bg: #2d2d2d;
+  --login-dark-border: #333333;
+  --login-dark-text: #e0e0e0;
+  --login-dark-text-secondary: #b0b0b0;
+  --login-accent-primary: #bb86fc;
+  --login-accent-secondary: #03dac6;
+  --login-dark-shadow: rgba(0, 0, 0, 0.5);
+  --login-dark-shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+/* Login Page Specific Dark Mode */
+.login-dark-mode {
+  background-color: var(--login-dark-bg);
+  color: var(--login-dark-text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-dark-mode #login {
+  background-color: var(--login-dark-bg);
+}
+
+.login-dark-mode .card {
+  background-color: var(--login-dark-card-bg);
+  border: 1px solid var(--login-dark-border);
+  box-shadow: 0 0 25px var(--login-dark-shadow);
+  border-radius: 12px;
+}
+
+.login-dark-mode .card h3 {
+  color: var(--login-dark-text);
+  border-bottom: 2px solid var(--login-accent-primary);
+}
+
+.login-dark-mode .alert {
+  background-color: var(--login-dark-content-bg);
+  border: 1px solid var(--login-dark-border);
+  color: var(--login-dark-text);
+}
+
+.login-dark-mode .alert-danger {
+  background-color: rgba(207, 102, 121, 0.1);
+  border-color: rgba(207, 102, 121, 0.2);
+  color: var(--login-accent-tertiary);
+}
+
+.login-dark-mode .form-intro {
+  color: var(--login-dark-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Login Tabs */
+.login-dark-mode .login-tabs .nav-link {
+  border: 2px solid var(--login-accent-primary);
+  color: var(--login-dark-text);
+  background-color: var(--login-dark-header-bg);
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.login-dark-mode .login-tabs .nav-link.active {
+  background-color: var(--login-accent-primary);
+  color: var(--login-dark-bg);
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+.login-dark-mode .login-tabs .nav-link:hover:not(.active) {
+  background-color: var(--login-dark-content-bg);
+}
+
+/* Login Forms */
+.login-dark-mode .login-form {
+  background-color: var(--login-dark-card-bg);
+  border-radius: 8px;
+  padding: 1rem 0;
+}
+
+.login-dark-mode .login-form.active {
+  display: block;
+  opacity: 1;
+}
+
+.login-dark-mode .login-form input[type="text"],
+.login-dark-mode .login-form input[type="email"],
+.login-dark-mode .login-form input[type="password"] {
+  background-color: var(--login-dark-content-bg);
+  color: var(--login-dark-text);
+  border-bottom: 2px solid var(--login-dark-border);
+  padding: 10px 0;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.login-dark-mode .login-form input[type="text"]:focus,
+.login-dark-mode .login-form input[type="email"]:focus,
+.login-dark-mode .login-form input[type="password"]:focus {
+  border-bottom: 2px solid var(--login-accent-primary);
+  box-shadow: 0 1px 0 0 var(--login-accent-primary);
+  outline: none;
+}
+
+.login-dark-mode .login-form input::placeholder {
+  color: var(--login-dark-text-secondary);
+}
+
+/* Login Button */
+.login-dark-mode .btn-login {
+  background-color: var(--login-accent-primary);
+  color: var(--login-dark-bg);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.login-dark-mode .btn-login:hover {
+  background-color: #a366f5;
+  box-shadow: 0 4px 15px rgba(187, 134, 252, 0.3);
+}
+
+/* Form Divider */
+.login-dark-mode .form-divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  position: relative;
+  color: var(--login-dark-text-secondary);
+}
+
+.login-dark-mode .form-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--login-dark-border);
+  z-index: 1;
+}
+
+.login-dark-mode .form-divider span {
+  background-color: var(--login-dark-card-bg);
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+/* Social Login Buttons */
+.login-dark-mode .social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.login-dark-mode .social-btn {
+  background-color: var(--login-dark-content-bg);
+  border: 1px solid var(--login-dark-border);
+  color: var(--login-dark-text);
+  padding: 0.75rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.login-dark-mode .social-btn:hover {
+  background-color: var(--login-accent-primary);
+  color: var(--login-dark-bg);
+  border-color: var(--login-accent-primary);
+}
+
+/* Forgot Password and Signup Links */
+.login-dark-mode .form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--login-dark-text-secondary);
+}
+
+.login-dark-mode .form-footer a {
+  color: var(--login-accent-primary);
+  text-decoration: none;
+}
+
+.login-dark-mode .form-footer a:hover {
+  color: var(--login-accent-secondary);
+  text-decoration: underline;
+}
+
+/* Language Switch */
+.login-dark-mode .language-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.login-dark-mode .language-switch a {
+  color: var(--login-accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-dark-mode .language-switch a:hover {
+  color: var(--login-accent-secondary);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for login page */
+@media (max-width: 768px) {
+  .login-dark-mode .card {
+    margin: 1rem;
+    padding: 1.5rem !important;
+  }
+  
+  .login-dark-mode .login-tabs .nav-link {
+    margin: 0 5px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .login-dark-mode .social-login {
+    flex-direction: column;
+    align-items: center;
+  }
+}

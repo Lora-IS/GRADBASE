@@ -1,0 +1,225 @@
+/* Specialized Dark Mode CSS for Profile Page */
+
+:root {
+  --profile-dark-bg: #121212;
+  --profile-dark-box-bg: #1e1e1e;
+  --profile-dark-content-bg: #252525;
+  --profile-dark-header-bg: #2d2d2d;
+  --profile-dark-border: #333333;
+  --profile-dark-text: #e0e0e0;
+  --profile-dark-text-secondary: #b0b0b0;
+  --profile-accent-primary: #bb86fc;
+  --profile-accent-secondary: #03dac6;
+  --profile-accent-tertiary: #cf6679;
+  --profile-dark-shadow: rgba(0, 0, 0, 0.5);
+  --profile-dark-shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Page Specific Dark Mode */
+.profile-dark-mode {
+  background-color: var(--profile-dark-bg);
+  color: var(--profile-dark-text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-dark-mode .profile-box {
+  background-color: var(--profile-dark-box-bg);
+  border: 1px solid var(--profile-dark-border);
+  box-shadow: 0 0 25px var(--profile-dark-shadow);
+  border-radius: 12px;
+}
+
+.profile-dark-mode .page-title {
+  color: var(--profile-dark-text);
+  border-bottom: 2px solid var(--profile-accent-primary);
+}
+
+.profile-dark-mode .user-account-link {
+  color: var(--profile-accent-primary);
+  text-decoration: none;
+}
+
+.profile-dark-mode .user-account-link:hover {
+  color: var(--profile-accent-secondary);
+  text-decoration: underline;
+}
+
+.profile-dark-mode p {
+  color: var(--profile-dark-text-secondary);
+}
+
+.profile-dark-mode .section-title {
+  color: var(--profile-accent-primary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--profile-dark-border);
+  padding-bottom: 0.5rem;
+}
+
+.profile-dark-mode .section-block {
+  border-top: 1px solid var(--profile-dark-border);
+}
+
+.profile-dark-mode ul {
+  color: var(--profile-dark-text-secondary);
+}
+
+.profile-dark-mode li {
+  color: var(--profile-dark-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.profile-dark-mode .text-muted {
+  color: var(--profile-dark-text-secondary) !important;
+}
+
+.profile-dark-mode .btn-logout {
+  background-color: var(--profile-accent-tertiary);
+  color: var(--profile-dark-bg);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px var(--profile-dark-shadow);
+}
+
+.profile-dark-mode .btn-logout:hover {
+  background-color: #b05a6a;
+  box-shadow: 0 2px 8px rgba(207, 102, 121, 0.3);
+}
+
+.profile-dark-mode .btn-logout img {
+  filter: invert(1);
+}
+
+/* Profile Data Display Enhancements */
+.profile-dark-mode .data-section {
+  background-color: var(--profile-dark-content-bg);
+  border: 1px solid var(--profile-dark-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-dark-mode .data-section h3 {
+  color: var(--profile-accent-primary);
+  margin-top: 0;
+}
+
+.profile-dark-mode .data-item {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.profile-dark-mode .data-label {
+  font-weight: bold;
+  min-width: 150px;
+  color: var(--profile-dark-text);
+}
+
+.profile-dark-mode .data-value {
+  color: var(--profile-dark-text-secondary);
+}
+
+/* Project Lists in Profile */
+.profile-dark-mode .project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-dark-mode .project-item {
+  background-color: var(--profile-dark-header-bg);
+  border: 1px solid var(--profile-dark-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.profile-dark-mode .project-item h4 {
+  color: var(--profile-accent-primary);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.profile-dark-mode .project-item p {
+  color: var(--profile-dark-text-secondary);
+  margin: 0.25rem 0;
+}
+
+.profile-dark-mode .project-meta {
+  font-size: 0.9rem;
+  color: var(--profile-dark-text-secondary);
+}
+
+/* Rating Display */
+.profile-dark-mode .rating-display {
+  color: var(--profile-accent-secondary);
+  font-weight: bold;
+}
+
+.profile-dark-mode .star-rating {
+  color: var(--profile-dark-text-secondary);
+}
+
+.profile-dark-mode .star-rating .filled {
+  color: var(--profile-accent-secondary);
+}
+
+/* Comment Display */
+.profile-dark-mode .comment-item {
+  background-color: var(--profile-dark-header-bg);
+  border: 1px solid var(--profile-dark-border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-dark-mode .comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.profile-dark-mode .comment-author {
+  font-weight: bold;
+  color: var(--profile-accent-primary);
+}
+
+.profile-dark-mode .comment-date {
+  color: var(--profile-dark-text-secondary);
+  font-size: 0.9rem;
+}
+
+.profile-dark-mode .comment-content {
+  color: var(--profile-dark-text-secondary);
+}
+
+/* Empty State Messages */
+.profile-dark-mode .empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: var(--profile-dark-text-secondary);
+  background-color: var(--profile-dark-content-bg);
+  border: 1px dashed var(--profile-dark-border);
+  border-radius: 8px;
+}
+
+.profile-dark-mode .empty-state i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--profile-dark-text-secondary);
+}
+
+/* Responsive adjustments for profile page */
+@media (max-width: 768px) {
+  .profile-dark-mode .profile-box {
+    padding: 1rem;
+  }
+  
+  .profile-dark-mode .data-item {
+    flex-direction: column;
+  }
+  
+  .profile-dark-mode .data-label {
+    min-width: auto;
+    margin-bottom: 0.25rem;
+  }
+}

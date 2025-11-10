@@ -1,0 +1,147 @@
+/* Specialized Dark Mode CSS for Submission Page */
+
+:root {
+  --submission-dark-bg: #121212;
+  --submission-dark-container-bg: #1e1e1e;
+  --submission-dark-content-bg: #252525;
+  --submission-dark-header-bg: #2d2d2d;
+  --submission-dark-border: #333333;
+  --submission-dark-text: #e0e0e0;
+  --submission-dark-text-secondary: #b0b0b0;
+  --submission-accent-primary: #bb86fc;
+  --submission-accent-secondary: #03dac6;
+  --submission-dark-shadow: rgba(0, 0, 0, 0.5);
+  --submission-dark-shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+/* Submission Page Specific Dark Mode */
+.submission-dark-mode {
+  background-color: var(--submission-dark-bg);
+  color: var(--submission-dark-text);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+}
+
+.submission-dark-mode .container {
+  background-color: var(--submission-dark-container-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px var(--submission-dark-shadow);
+  max-width: 700px;
+  margin: 40px auto;
+  border: 1px solid var(--submission-dark-border);
+}
+
+.submission-dark-mode h2 {
+  text-align: center;
+  color: var(--submission-dark-text);
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--submission-accent-primary);
+  padding-bottom: 6px;
+}
+
+.submission-dark-mode .form-group {
+  margin-bottom: 20px;
+}
+
+.submission-dark-mode .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--submission-accent-primary);
+}
+
+.submission-dark-mode .form-group input,
+.submission-dark-mode .form-group textarea,
+.submission-dark-mode .form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--submission-dark-border);
+  font-size: 16px;
+  background-color: var(--submission-dark-content-bg);
+  color: var(--submission-dark-text);
+  box-sizing: border-box;
+}
+
+.submission-dark-mode .form-group input:focus,
+.submission-dark-mode .form-group textarea:focus,
+.submission-dark-mode .form-group select:focus {
+  border-color: var(--submission-accent-primary);
+  box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.2);
+  outline: none;
+}
+
+.submission-dark-mode .form-group small {
+  color: var(--submission-dark-text-secondary);
+  display: block;
+  margin-top: 5px;
+}
+
+.submission-dark-mode .button-row {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submission-dark-mode .button-row button {
+  background-color: transparent;
+  color: var(--submission-accent-primary);
+  border: 2px solid var(--submission-accent-primary);
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submission-dark-mode .button-row button:hover {
+  background-color: var(--submission-accent-primary);
+  color: var(--submission-dark-bg);
+}
+
+.submission-dark-mode #posterPreview {
+  max-width: 100%;
+  margin-top: 10px;
+  display: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--submission-dark-shadow);
+}
+
+.submission-dark-mode .back-btn {
+  color: var(--submission-dark-text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid var(--submission-accent-primary);
+}
+
+.submission-dark-mode .back-btn:hover {
+  background-color: var(--submission-accent-primary);
+  color: var(--submission-dark-bg);
+}
+
+.submission-dark-mode .back-btn img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
+
+/* Responsive adjustments for submission page */
+@media (max-width: 768px) {
+  .submission-dark-mode {
+    padding: 1rem;
+  }
+  
+  .submission-dark-mode .container {
+    padding: 20px;
+  }
+  
+  .submission-dark-mode h2 {
+    font-size: 1.5rem;
+  }
+}

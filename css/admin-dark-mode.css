@@ -1,0 +1,130 @@
+/* Specialized Dark Mode CSS for Admin Dashboard */
+
+:root {
+  --admin-dark-bg: #1a1a1a;
+  --admin-dark-card-bg: #252525;
+  --admin-dark-table-bg: #1e1e1e;
+  --admin-dark-header-bg: #2d2d2d;
+  --admin-dark-border: #444444;
+  --admin-dark-text: #e0e0e0;
+  --admin-dark-text-secondary: #b0b0b0;
+  --admin-accent-primary: #bb86fc;
+  --admin-accent-secondary: #03dac6;
+  --admin-accent-tertiary: #cf6679;
+  --admin-dark-shadow: rgba(0, 0, 0, 0.6);
+  --admin-dark-shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+/* Admin Dashboard Specific Dark Mode */
+.admin-dark-mode {
+  background-color: var(--admin-dark-bg);
+  color: var(--admin-dark-text);
+}
+
+.admin-dark-mode header {
+  background-color: var(--admin-dark-header-bg);
+  border-bottom: 1px solid var(--admin-dark-border);
+}
+
+.admin-dark-mode h1,
+.admin-dark-mode h2 {
+  color: var(--admin-accent-primary);
+}
+
+.admin-dark-mode .stats-grid {
+  background-color: transparent;
+}
+
+.admin-dark-mode .stat-card {
+  background-color: var(--admin-dark-card-bg);
+  border: 1px solid var(--admin-dark-border);
+  box-shadow: 0 4px 12px var(--admin-dark-shadow);
+  border-left: 6px solid var(--admin-accent-primary);
+}
+
+.admin-dark-mode .stat-card h3 {
+  color: var(--admin-accent-primary);
+}
+
+.admin-dark-mode .stat-card p {
+  color: var(--admin-dark-text);
+}
+
+.admin-dark-mode .filter-section {
+  background-color: var(--admin-dark-card-bg);
+  border: 1px solid var(--admin-dark-border);
+  box-shadow: 0 4px 12px var(--admin-dark-shadow);
+}
+
+.admin-dark-mode .filter-section h2 {
+  color: var(--admin-accent-primary);
+}
+
+.admin-dark-mode .filter-form {
+  background-color: var(--admin-dark-header-bg);
+  border: 1px solid var(--admin-dark-border);
+}
+
+.admin-dark-mode .filter-form label {
+  color: var(--admin-accent-primary);
+}
+
+.admin-dark-mode .filter-form select,
+.admin-dark-mode .filter-form input[type="date"] {
+  background-color: var(--admin-dark-bg);
+  border: 1px solid var(--admin-dark-border);
+  color: var(--admin-dark-text);
+}
+
+.admin-dark-mode table {
+  background-color: var(--admin-dark-table-bg);
+  border: 1px solid var(--admin-dark-border);
+}
+
+.admin-dark-mode th {
+  background-color: var(--admin-dark-header-bg);
+  color: var(--admin-dark-text);
+}
+
+.admin-dark-mode td {
+  color: var(--admin-dark-text-secondary);
+  border: 1px solid var(--admin-dark-border);
+}
+
+.admin-dark-mode tr:hover {
+  background-color: var(--admin-dark-card-bg);
+}
+
+.admin-dark-mode .status.pending {
+  color: #ff9800;
+}
+
+.admin-dark-mode .status.approved {
+  color: #4caf50;
+}
+
+.admin-dark-mode .status.rejected {
+  color: #f44336;
+}
+
+.admin-dark-mode button {
+  background-color: var(--admin-dark-header-bg);
+  color: var(--admin-accent-primary);
+  border: 2px solid var(--admin-accent-primary);
+}
+
+.admin-dark-mode button:hover {
+  background-color: var(--admin-accent-primary);
+  color: var(--admin-dark-bg);
+}
+
+/* Responsive adjustments for admin dashboard */
+@media (max-width: 768px) {
+  .admin-dark-mode .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-dark-mode .filter-form {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,168 @@
+/* Specialized Dark Mode CSS for Projects Page */
+
+:root {
+  --projects-dark-bg: #121212;
+  --projects-dark-card-bg: #1e1e1e;
+  --projects-dark-content-bg: #252525;
+  --projects-dark-header-bg: #2d2d2d;
+  --projects-dark-border: #333333;
+  --projects-dark-text: #e0e0e0;
+  --projects-dark-text-secondary: #b0b0b0;
+  --projects-accent-primary: #bb86fc;
+  --projects-accent-secondary: #03dac6;
+  --projects-dark-shadow: rgba(0, 0, 0, 0.5);
+  --projects-dark-shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Page Specific Dark Mode */
+.projects-dark-mode {
+  background-color: var(--projects-dark-bg);
+  color: var(--projects-dark-text);
+}
+
+.projects-dark-mode .page-header {
+  background-color: var(--projects-dark-card-bg);
+  border-bottom: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .page-title {
+  color: var(--projects-accent-primary);
+  border-bottom: 2px solid var(--projects-accent-primary);
+}
+
+.projects-dark-mode .project-card {
+  background-color: var(--projects-dark-card-bg);
+  border: 1px solid var(--projects-dark-border);
+  box-shadow: 0 0 15px var(--projects-dark-shadow);
+}
+
+.projects-dark-mode .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--projects-dark-shadow);
+}
+
+.projects-dark-mode .project-content {
+  background-color: var(--projects-dark-content-bg);
+}
+
+.projects-dark-mode .project-title {
+  color: var(--projects-dark-text);
+}
+
+.projects-dark-mode .project-description {
+  color: var(--projects-dark-text-secondary);
+}
+
+.projects-dark-mode .project-image {
+  border-bottom: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .view-details-btn {
+  background-color: var(--projects-accent-primary);
+  color: var(--projects-dark-bg);
+  border: none;
+}
+
+.projects-dark-mode .view-details-btn:hover {
+  background-color: #a366f5;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.4);
+}
+
+.projects-dark-mode .language-switch a {
+  color: var(--projects-accent-primary);
+}
+
+.projects-dark-mode .language-switch a:hover {
+  color: var(--projects-accent-secondary);
+  text-decoration: underline;
+}
+
+/* Project Details Page Specific Dark Mode */
+.projects-dark-mode .project-details-container {
+  background-color: var(--projects-dark-card-bg);
+  border: 1px solid var(--projects-dark-border);
+  box-shadow: 0 0 20px var(--projects-dark-shadow);
+}
+
+.projects-dark-mode .project-details-header {
+  border-bottom: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .project-details-title {
+  color: var(--projects-accent-primary);
+}
+
+.projects-dark-mode .project-meta {
+  color: var(--projects-dark-text-secondary);
+}
+
+.projects-dark-mode .project-section {
+  border-bottom: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .project-section h3 {
+  color: var(--projects-accent-primary);
+}
+
+.projects-dark-mode .btn-bookmark {
+  background-color: var(--projects-dark-header-bg);
+  color: var(--projects-dark-text);
+  border: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .btn-bookmark.bookmarked {
+  background-color: var(--projects-accent-primary);
+  color: var(--projects-dark-bg);
+}
+
+.projects-dark-mode .review-form {
+  background-color: var(--projects-dark-content-bg);
+  border: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .review-form input,
+.projects-dark-mode .review-form textarea,
+.projects-dark-mode .review-form select {
+  background-color: var(--projects-dark-card-bg);
+  border: 1px solid var(--projects-dark-border);
+  color: var(--projects-dark-text);
+}
+
+.projects-dark-mode .review-form input:focus,
+.projects-dark-mode .review-form textarea:focus,
+.projects-dark-mode .review-form select:focus {
+  border-color: var(--projects-accent-primary);
+  box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.2);
+}
+
+.projects-dark-mode .existing-reviews {
+  background-color: var(--projects-dark-content-bg);
+  border: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .review-item {
+  border-bottom: 1px solid var(--projects-dark-border);
+}
+
+.projects-dark-mode .review-author {
+  color: var(--projects-accent-primary);
+}
+
+.projects-dark-mode .review-rating .star {
+  color: var(--projects-dark-text-secondary);
+}
+
+.projects-dark-mode .review-rating .star.filled {
+  color: var(--projects-accent-secondary);
+}
+
+/* Responsive adjustments for projects page */
+@media (max-width: 768px) {
+  .projects-dark-mode .project-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-dark-mode .project-content {
+    padding: 1rem;
+  }
+}
